@@ -1,0 +1,15 @@
+Managed-prompt trace metadata verification
+==========================================
+
+Trace ID: 930461828e8b7b49a569c976311ca873
+Correlation ID: prompt-candidate-20260929
+Prompt name: day13-chat
+Prompt label: candidate
+Prompt version: 2
+Prompt source: langfuse
+Model: claude-sonnet-4-5
+Generation usage: input=67, output=135, total=202
+Generation cost: USD 0.002226
+
+No public key, secret key, raw email, phone, CCCD or card data is included in
+this evidence file. Add a redacted Langfuse metadata screenshot before submission.

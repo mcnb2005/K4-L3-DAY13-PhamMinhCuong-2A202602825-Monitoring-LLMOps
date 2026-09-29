@@ -1,0 +1,25 @@
+Prompt promote and rollback verification
+========================================
+
+Baseline comparison:
+- trace: 5bd2a5563446337f231676cd06e8bc5d
+- correlation_id: prompt-baseline-20260929
+- label/version: baseline / 1
+
+Candidate comparison:
+- trace: 930461828e8b7b49a569c976311ca873
+- correlation_id: prompt-candidate-20260929
+- label/version: candidate / 2
+
+Promoted production:
+- trace: 01a21ec25b7589993dee989a1557a28f
+- correlation_id: production-promoted-v2-20260929
+- label/version: production / 2
+
+Rollback confirmation:
+- trace: 81b3792ba5af4c3caa13e06114b198eb
+- correlation_id: production-rollback-v1-20260929
+- label/version: production / 1
+
+Final state: production points to version 1.
+Add screenshots showing the label before and after rollback before submission.

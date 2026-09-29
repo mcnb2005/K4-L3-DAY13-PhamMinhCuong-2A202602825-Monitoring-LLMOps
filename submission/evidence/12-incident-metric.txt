@@ -1,0 +1,25 @@
+Official challenge metric evidence
+=================================
+
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Cohort: K4-L3A
+Incident: rag_slow
+Investigation window: 2026-09-29 17:26:08–17:26:23 Asia/Bangkok
+Dashboard generated at: 2026-09-29 17:26:55 Asia/Bangkok
+
+Dashboard window (5 official requests):
+- Request count: 5
+- Latency P50: 2656 ms
+- Latency P95: 3503 ms
+- Latency P99: 3503 ms
+- TTFT P95: 51 ms
+- Latency SLO threshold: 2000 ms
+- Error rate: 0.00%
+- Retrieval success: 100.00%
+- Quality average: 0.840
+- Total cost: USD 0.009300
+- Tokens: 175 input + 585 output = 760 total
+
+Conclusion: latency P95 breached the 2000 ms SLO while TTFT, error rate,
+retrieval success, and quality remained healthy. Continue from metric to the
+correlated request log and its Langfuse trace.

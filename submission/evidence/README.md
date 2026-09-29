@@ -32,3 +32,40 @@ Từ `submission/REPORT.md`, dẫn ảnh bằng đường dẫn tương đối:
 ```
 
 Không commit secret, API key, PII thô hoặc evidence của học viên/lớp khác.
+
+## Trạng thái evidence hiện tại
+
+Đã tạo và kiểm chứng local:
+
+- `00-baseline.txt`
+- `01-pytest.txt`
+- `02-log-validator.txt`
+- `03-dashboard-validator.txt`
+- `04-structured-log.txt`
+- `05-pii-redaction.txt`
+- `06-trace-list.txt`
+- `06-trace-list.png`
+- `07-trace-waterfall.txt`
+- `07-trace-waterfall.png`
+- `08-trace-metadata.txt`
+- `08-trace-metadata.png`
+- `09-prompt-versions.txt`
+- `09-prompt-versions.png`
+- `10-prompt-rollback.txt`
+- `10a-prompt-promoted-v2.png`
+- `10b-prompt-rollback-v1.png`
+- `11-dashboard-overview.png`
+- `12-practice-incident-metric.png`
+- `13-practice-incident-log.txt`
+- `12-incident-metric.png`
+- `12-incident-metric.txt`
+- `13-incident-log.txt`
+- `14-incident-trace.txt`
+
+Hai file `12-practice-*` và `13-practice-*` chỉ chứng minh workflow với scenario
+`rag_slow`, không thay thế challenge chính thức. Evidence text `06`–`10` đã được
+xác minh bằng Langfuse Observations API v2. Ảnh UI đã có cho `06`–`09`, bước
+promote v2 (`10a`) và rollback về v1 (`10b`).
+Incident chính thức `12`–`14` đã được xác minh bằng dashboard, structured log và
+Langfuse Observations API v2. Ảnh dashboard đã có; còn cần bổ sung ảnh trace UI
+và commit SHA cuối.

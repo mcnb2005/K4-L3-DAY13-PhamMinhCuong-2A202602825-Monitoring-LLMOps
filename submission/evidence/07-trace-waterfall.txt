@@ -1,0 +1,22 @@
+Langfuse waterfall verification
+===============================
+
+Trace ID: 930461828e8b7b49a569c976311ca873
+
+Root:
+- observation: 90ecab54f5f171ba
+- parent: none
+- type/name: AGENT / lab-agent-run
+
+Children:
+- observation: ca774fe7f8903fa7
+  parent: 90ecab54f5f171ba
+  type/name: RETRIEVER / retrieval
+- observation: 1d889c4af891bd5d
+  parent: 90ecab54f5f171ba
+  type/name: GENERATION / llm-generation
+  usage: input=67, output=135, total=202
+  cost: USD 0.002226
+
+The parent IDs prove that retrieval and generation are direct children of the
+agent root. Add a Langfuse waterfall screenshot before submission.

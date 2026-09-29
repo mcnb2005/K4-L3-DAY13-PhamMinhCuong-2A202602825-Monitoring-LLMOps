@@ -1,0 +1,28 @@
+Official challenge Langfuse trace evidence
+==========================================
+
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Correlation ID: req-9767637f
+Trace ID: a131d5b1a71d649bd54c76ff8e145fb1
+Session: k4-l3a-challenge-s01
+Feature: monitoring
+Prompt: day13-chat version 1 (production)
+
+Observation tree:
+- AGENT lab-agent-run
+  - observation ID: 3b936f9a5d679689
+  - latency: 3.505 s
+  - RETRIEVER retrieval
+    - observation ID: 78b3644c55e17be8
+    - latency: 2.502 s
+  - GENERATION llm-generation
+    - observation ID: 98348a99ba6a4d89
+    - latency: 0.152 s
+    - TTFT: 0.050 s
+    - usage: 35 input + 135 output = 170 tokens
+    - cost: USD 0.002130
+
+Root cause: the retrieval child consumes 2.502 s, far more than the generation
+child at 0.152 s. This matches the official rag_slow incident and explains the
+latency SLO breach. All values were retrieved from Langfuse Observations API v2;
+credential fields were excluded from this evidence.

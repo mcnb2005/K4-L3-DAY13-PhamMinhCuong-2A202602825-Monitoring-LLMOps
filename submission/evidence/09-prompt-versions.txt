@@ -1,0 +1,21 @@
+Langfuse prompt versions
+========================
+
+Prompt: day13-chat
+Versions: 1, 2
+Final labels present: baseline, candidate, latest, production
+
+Version 1:
+- baseline
+- production (final state after rollback)
+
+Version 2:
+- candidate
+- latest
+
+Managed prompt contract in both versions:
+- {{feature}}
+- {{docs}}
+- {{message}}
+
+Add a screenshot of the prompt versions page before submission.

@@ -1,0 +1,14 @@
+Official challenge log evidence
+===============================
+
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Selected correlation ID: req-9767637f
+Session: k4-l3a-challenge-s01
+Feature: monitoring
+Timestamp: 2026-09-29T10:26:12.685902Z
+
+Sanitized structured log:
+{"service":"api","latency_ms":3503,"ttft_ms":50,"tokens_in":35,"tokens_out":135,"cost_usd":0.00213,"quality_score":0.8,"tool_name":"retrieval","tool_success":true,"event":"response_sent","session_id":"k4-l3a-challenge-s01","model":"claude-sonnet-4-5","correlation_id":"req-9767637f","env":"dev","feature":"monitoring","user_id_hash":"dde2e75b20cf","level":"info","ts":"2026-09-29T10:26:12.685902Z"}
+
+This request is above the 2000 ms threshold and uses the same correlation ID
+as the Langfuse trace recorded in 14-incident-trace.txt.

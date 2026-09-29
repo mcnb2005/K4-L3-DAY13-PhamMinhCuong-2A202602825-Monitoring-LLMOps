@@ -1,0 +1,11 @@
+Practice incident only — not official CP3 evidence
+==================================================
+
+Scenario: rag_slow
+Metric: latency P95 increased from 154 ms to 2654 ms (SLO threshold: 2000 ms)
+Correlation ID: req-e13e9bc6
+
+{"service":"api","latency_ms":2653,"ttft_ms":50,"tokens_in":39,"tokens_out":170,"cost_usd":0.002667,"quality_score":0.9,"tool_name":"retrieval","tool_success":true,"event":"response_sent","correlation_id":"req-e13e9bc6","feature":"qa","model":"claude-sonnet-4-5","env":"dev","session_id":"s04","user_id_hash":"75af07890985","level":"info","ts":"2026-09-29T07:50:35.663132Z"}
+
+The official incident evidence still requires the private config/challenge.json
+released by the Lab Coach and a Langfuse trace with this request's correlation ID.

@@ -1,0 +1,16 @@
+Baseline captured before implementation
+=======================================
+
+Public tests: 22 passed
+Dashboard validator: HỢP LỆ: 6/6 panel
+
+Log validator:
+- Total log records analyzed: 21
+- Records with missing required fields: 20
+- Records with missing enrichment: 20
+- Unique correlation IDs found: 0
+- Potential PII leaks detected: 0
+- Estimated Score: 30/100
+
+The baseline was generated from the untouched starter code before the mandatory
+CP1 and CP2 TODOs were implemented.

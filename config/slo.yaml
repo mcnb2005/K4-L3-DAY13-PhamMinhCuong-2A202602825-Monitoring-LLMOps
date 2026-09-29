@@ -3,11 +3,17 @@ primary_slo:
   name: fast_successful_requests
   window: 28d
   sli:
-    good_event: 'event == "response_sent" and latency_ms <= 3000'
+    good_event: 'event == "response_sent" and latency_ms <= 2000'
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  error_budget:
+    bad_events_per_1000_requests: 5
+    equivalent_time_over_28d: 3h21m36s
+  rationale: >-
+    Baseline của fake LLM thường dưới 1 giây ở concurrency 5. Ngưỡng 2 giây
+    vẫn chừa headroom cho dao động cục bộ nhưng phát hiện rõ tail latency do
+    retrieval chậm, là triệu chứng trực tiếp mà người dùng cảm nhận.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5

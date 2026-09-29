@@ -1,0 +1,8 @@
+Runtime PII-redaction samples
+=============================
+
+{"payload":{"message_preview":"What is your refund policy? My email is [REDACTED_EMAIL]"},"event":"request_received","correlation_id":"req-3875885f"}
+{"payload":{"message_preview":"Here is my phone [REDACTED_PHONE_VN], what should be logged?"},"event":"request_received","correlation_id":"req-7d88575c"}
+{"payload":{"message_preview":"What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?"},"event":"request_received","correlation_id":"req-c8cf69da"}
+
+Validator result: Potential PII leaks detected: 0

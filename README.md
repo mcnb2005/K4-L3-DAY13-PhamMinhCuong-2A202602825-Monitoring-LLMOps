@@ -83,6 +83,10 @@ python scripts/validate_dashboard.py
 python -m pytest -q
 ```
 
+Dashboard runtime đọc trực tiếp từ `data/logs.jsonl` tại
+`http://127.0.0.1:8000/dashboard`; dữ liệu aggregate JSON tương ứng ở
+`http://127.0.0.1:8000/dashboard/data`.
+
 Baseline log chưa đạt là bình thường vì các `TODO` của CP1 chưa được làm. Ghi lại kết quả baseline vào `submission/REPORT.md` trước khi sửa.
 
 ## Lộ trình 14:00–18:00 (240 phút)

@@ -1,0 +1,26 @@
+Langfuse Observations API v2 verification
+=========================================
+
+Verified at: 2026-09-29
+Expected personal project name: day13-k4-l3a-2A202602825
+Root traces: 10
+Observations: 30 (10 agent + 10 retriever + 10 generation)
+
+d968c748cc79830bc16ff0b632c2adc1
+325e13526f8e738344fc4cadecaaa47a
+5cecddb0d98f86cb426aaf5be11360f3
+32c7d219e9676b99422d00c7367bb215
+449222fc5e4954f9ae582948c8c3dc40
+df9a22b15862c7740890e4e6fd0bbae5
+cfd1054ccfe0315f44826b9e1d98c194
+45a40af9a4a4b25ece1e472b188b66e1
+7226120d286791fdcd307084c480ad4a
+09cc71f34db825d5cf024ef3f4a1d502
+
+Each trace was verified to contain:
+- AGENT: lab-agent-run
+- RETRIEVER: retrieval
+- GENERATION: llm-generation
+
+Replace or supplement this file with a Langfuse trace-list screenshot showing
+the personal project name `day13-k4-l3a-2A202602825` before submission.
